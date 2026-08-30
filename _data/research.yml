@@ -35,12 +35,12 @@
   detail: >
     RAG is the most practical way past a language model's knowledge limits, but the
     longer and noisier the retrieved context, the more models miss or misread the
-    evidence. We build benchmarks that pinpoint these failure modes (Ko-LongRAG)
+    evidence. We build benchmarks that pinpoint these failure modes
     and develop training and inference techniques that fix them.
   detail_ko: >
     RAG는 언어모델의 지식 한계를 넘는 가장 실용적인 길이지만, 검색 결과가 길고 노이즈가 많을수록
     모델이 근거를 놓치거나 잘못 읽는 문제가 발생합니다. 우리는 이 실패 지점을 정밀하게 측정하는
-    벤치마크(Ko-LongRAG)를 만들고, 이를 개선하는 학습·추론 기법을 연구합니다.
+    벤치마크를 만들고, 이를 개선하는 학습·추론 기법을 연구합니다.
 
 - title: "LLM Evaluation & Robustness"
   summary: >
@@ -70,11 +70,11 @@
     As language models begin storing user preferences in long-term memory, a new
     question emerges: when should a preference not be applied? In formal
     communication, personal taste must yield to social and institutional norms.
-    We measure and improve this context-sensitive selectivity (BenchPreS).
+    We measure and improve this context-sensitive selectivity.
   detail_ko: >
     언어모델이 사용자 선호를 장기 기억에 저장하기 시작하면서, "언제 그 선호를 쓰지 않아야 하는가"가
     새로운 문제로 떠올랐습니다. 공적인 커뮤니케이션에서는 개인 취향을 억제해야 하죠.
-    우리는 이 맥락 민감한 선택성을 측정하고 개선하는 연구를 진행합니다(BenchPreS).
+    우리는 이 맥락 민감한 선택성을 측정하고 개선하는 연구를 진행합니다.
 
 - title: "Dialogue & Interactive Systems"
   summary: >
