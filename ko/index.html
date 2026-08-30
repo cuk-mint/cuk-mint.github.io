@@ -1,17 +1,19 @@
 ---
 layout: default
 title: Home
+permalink: /ko/
 ---
 
 <section class="hero">
   <div class="wrap">
     <div class="hero-eyebrow">{{ site.department }} · {{ site.university }}</div>
     <h1>{{ site.lab_name }}</h1>
+    <div class="hero-ko">{{ site.lab_name_ko }}</div>
     <p class="acronym"><b>M</b>achine <b>I</b>ntelligence<span class="dot">·</span><b>N</b>atural Language<span class="dot">·</span><b>T</b>rustworthiness</p>
-    <p class="hero-tagline">{{ site.tagline }}</p>
+    <p class="hero-tagline">{{ site.tagline_ko }}</p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="{{ '/join/' | relative_url }}">We're recruiting students &rarr;</a>
-      <a class="btn btn-ghost" href="{{ '/research/' | relative_url }}">Explore our research</a>
+      <a class="btn btn-primary" href="{{ '/ko/join/' | relative_url }}">함께할 학생을 찾습니다 &rarr;</a>
+      <a class="btn btn-ghost" href="{{ '/ko/research/' | relative_url }}">연구 주제 보기</a>
     </div>
   </div>
 </section>
@@ -24,10 +26,11 @@ title: Home
     </div>
     <ul class="news">
       {%- for item in site.data.news limit: site.home_news_count -%}
+      {%- assign txt = item.text_ko | default: item.text -%}
       <li class="news-item">
         <span class="news-date">{{ item.date | replace: '-', '.' }}</span>
         {%- if item.tag %}<span class="news-tag is-{{ item.tag }}">{{ item.tag }}</span>{% endif -%}
-        <span class="news-text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+        <span class="news-text">{{ txt | markdownify | remove: '<p>' | remove: '</p>' }}</span>
       </li>
       {%- endfor -%}
     </ul>
@@ -41,7 +44,7 @@ title: Home
   <div class="wrap">
     <div class="section-head">
       <h2 class="section-title">Recent Publications</h2>
-      <a class="section-more" href="{{ '/publications/' | relative_url }}">View all &rarr;</a>
+      <a class="section-more" href="{{ '/ko/publications/' | relative_url }}">전체 보기 &rarr;</a>
     </div>
     <ul class="pubs">
       {%- for p in featured limit: site.home_pubs_count -%}
@@ -56,14 +59,14 @@ title: Home
   <div class="wrap">
     <div class="section-head">
       <h2 class="section-title">Research</h2>
-      <a class="section-more" href="{{ '/research/' | relative_url }}">Learn more &rarr;</a>
+      <a class="section-more" href="{{ '/ko/research/' | relative_url }}">자세히 &rarr;</a>
     </div>
     <ul class="cards">
       {%- for topic in site.data.research -%}
       <li class="card">
         <div class="card-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</div>
         <div class="card-title">{{ topic.title }}</div>
-        <div class="card-text">{{ topic.summary }}</div>
+        <div class="card-text">{{ topic.summary_ko | default: topic.summary }}</div>
       </li>
       {%- endfor -%}
     </ul>

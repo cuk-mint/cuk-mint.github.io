@@ -1,21 +1,21 @@
 ---
 layout: prose
 title: Courses
-subtitle: "가톨릭대학교 인공지능학과에서 담당하는 과목입니다."
+subtitle: "Courses taught at the Department of Artificial Intelligence, The Catholic University of Korea."
 permalink: /courses/
 ---
 
-## 2026학년도 2학기
+## Fall 2026
 
-| 과목 | 학년 | 비고 |
+| Course | Level | Note |
 |---|---|---|
-| 신호 및 시스템 | 학부 | Signals and Systems |
-| 자연어처리 | 학부 | Natural Language Processing |
+| Signals and Systems | Undergraduate | 신호 및 시스템 |
+| Natural Language Processing | Undergraduate | 자연어처리 |
 
-> 강의계획서와 수업 자료는 학교 LMS를 통해 배포합니다.
-> 수강 관련 문의는 [{{ site.email }}](mailto:{{ site.email }}) 로 보내주세요.
+> Syllabi and course materials are distributed through the university LMS.
+> For course-related questions, email [{{ site.email }}](mailto:{{ site.email }}).
 
-## 이전 강의 경력
+## Previous Teaching
 
 Seoul National University, Department of Electrical and Computer Engineering
 

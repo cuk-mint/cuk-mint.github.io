@@ -7,6 +7,15 @@ Jekyll + GitHub Pages. **서버 불필요, 비용 0원.**
 
 ---
 
+## 이중언어 구조 (EN 기본 / KO 보조)
+
+- 기본 사이트는 **영어**입니다. 우측 상단 **EN | KO** 탭으로 한국어 버전으로 전환합니다.
+- 한국어 페이지는 `ko/` 폴더에 있고 주소는 `/ko/...` 입니다 (예: `/research/` ↔ `/ko/research/`).
+- **데이터(논문·뉴스·연구주제·구성원)는 한 곳에서 관리**되고 두 언어 페이지가 같이 씁니다.
+  한국어 문구는 `_ko` 필드에 넣습니다 (`text_ko`, `summary_ko`, `detail_ko`, `bio_ko`).
+  `_ko` 필드가 없으면 영어가 대신 표시되므로, 급하면 영어만 채워도 사이트는 안 깨집니다.
+- 페이지 자체의 문구(예: Join Us 본문)를 고칠 때는 **영어 파일과 `ko/` 파일 양쪽**을 고쳐야 합니다.
+
 ## 자주 하는 작업
 
 ### 논문 추가
@@ -31,15 +40,29 @@ Jekyll + GitHub Pages. **서버 불필요, 비용 0원.**
 
 ### 뉴스 추가
 
-`_data/news.yml` **맨 위**에 3줄 추가합니다.
+`_data/news.yml` **맨 위**에 추가합니다. `text`는 영어(기본 사이트), `text_ko`는 한국어(/ko/)입니다.
 
 ```yaml
 - date: "2026-09"
   tag: paper                          # paper | award | talk | lab
-  text: "*논문 제목* 이 **ACL 2027**에 게재 승인되었습니다."
+  text: "*Paper Title* has been accepted to **ACL 2027**."
+  text_ko: "*논문 제목* 논문이 **ACL 2027**에 게재 승인되었습니다."
 ```
 
 `**굵게**`, `*기울임*`, `[링크](https://...)` 를 쓸 수 있습니다.
+
+### 과제 추가 (Research 페이지 상단)
+
+`_data/projects.yml` 의 `government:` / `industry:` 아래에 추가합니다.
+비어 있으면 페이지에 안내 문구가 대신 표시됩니다.
+
+```yaml
+government:
+  - title: "과제명"
+    agency: "IITP"
+    period: "2027.03 – 2030.02"
+    role: "PI"
+```
 
 ### 구성원 추가
 
@@ -138,10 +161,11 @@ contact.html             연락처
 - [x] 연구실 이름 — MINT Lab
 - [x] 로고 (`assets/img/logo.svg`, `favicon.svg`) — 민트 잎 + 신경망 잎맥
 - [x] 교수 프로필 사진 (`assets/img/people/yongil-kim.jpg`)
-- [ ] `_config.yml` — 연구실 호수 포함한 정확한 주소
+- [x] 주소 — N223호, 니콜스관 2층 (영/한)
+- [x] 영어 기본 + 한국어(/ko/) 이중언어 구조
 - [ ] `_config.yml` — 학교 이메일 나오면 교체
-- [ ] `_config.yml` — GitHub Organization 이름 확정 후 `url`·`github_url` 확인
-- [ ] `courses.md` — 실제 개설 학기·과목 확인
+- [ ] `courses.md` / `ko/courses.md` — 실제 개설 학기·과목 확인
+- [ ] 과제 생기면 `_data/projects.yml` 에 추가
 
 ## 브랜드
 

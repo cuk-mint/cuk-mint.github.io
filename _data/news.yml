@@ -1,39 +1,50 @@
 # ============================================================
-#  뉴스 — 맨 위가 최신입니다. 새 소식은 이 파일 맨 위에 3줄 추가.
+#  뉴스 — 맨 위가 최신입니다. 새 소식은 이 파일 맨 위에 추가.
 #
-#  - date:  "2026-08"        (또는 "2026-08-30")
-#    text:  "본문. **굵게** 와 [링크](https://...) 사용 가능"
-#    tag:   paper | award | talk | lab      (색 구분용, 생략 가능)
+#  - date:    "2026-08"      (또는 "2026-08-30")
+#    tag:     paper | award | talk | lab     (색 구분용, 생략 가능)
+#    text:    "영어 본문 (기본 사이트에 표시)"
+#    text_ko: "한국어 본문 (/ko/ 페이지에 표시, 없으면 영어가 대신 나옴)"
+#
+#  **굵게** / *기울임* / [링크](https://...) 사용 가능
 # ============================================================
 
 - date: "2026-08"
   tag: lab
-  text: "**MINT Lab이 문을 열었습니다.** 김용일 교수가 가톨릭대학교 인공지능학과 조교수로 부임했습니다. 대학원생과 학부연구생을 모집합니다."
+  text: "**MINT Lab has opened.** Yongil Kim joined the Department of Artificial Intelligence at The Catholic University of Korea as an assistant professor. We are recruiting graduate students and undergraduate research interns."
+  text_ko: "**MINT Lab이 문을 열었습니다.** 김용일 교수가 가톨릭대학교 인공지능학과 조교수로 부임했습니다. 대학원생과 학부연구생을 모집합니다."
 
 - date: "2026-08"
   tag: paper
-  text: "*BenchPreS* 논문이 **EMNLP 2026**에 게재 승인되었습니다."
+  text: "*BenchPreS* has been accepted to **EMNLP 2026**."
+  text_ko: "*BenchPreS* 논문이 **EMNLP 2026**에 게재 승인되었습니다."
 
 - date: "2026-08"
   tag: paper
-  text: "*Multi-Genre Collection* 논문이 **CIKM 2026**에 게재 승인되었습니다."
+  text: "*Multi-Genre Collection* has been accepted to **CIKM 2026**."
+  text_ko: "*Multi-Genre Collection* 논문이 **CIKM 2026**에 게재 승인되었습니다."
 
 - date: "2026-08"
   tag: paper
-  text: "**K-EXAONE 2.0 Technical Report**가 공개되었습니다. ([arXiv](https://arxiv.org/abs/2608.04505))"
+  text: "The **K-EXAONE 2.0 Technical Report** is out. ([arXiv](https://arxiv.org/abs/2608.04505))"
+  text_ko: "**K-EXAONE 2.0 Technical Report**가 공개되었습니다. ([arXiv](https://arxiv.org/abs/2608.04505))"
 
 - date: "2026-04"
   tag: paper
-  text: "**EXAONE 4.5 Technical Report**가 공개되었습니다. ([arXiv](https://arxiv.org/abs/2604.08644))"
+  text: "The **EXAONE 4.5 Technical Report** is out. ([arXiv](https://arxiv.org/abs/2604.08644))"
+  text_ko: "**EXAONE 4.5 Technical Report**가 공개되었습니다. ([arXiv](https://arxiv.org/abs/2604.08644))"
 
 - date: "2026-01"
   tag: paper
-  text: "*Don't Judge Code by Its Cover* 논문이 **Findings of EACL 2026**에 게재 승인되었습니다."
+  text: "*Don't Judge Code by Its Cover* has been accepted to **Findings of EACL 2026**."
+  text_ko: "*Don't Judge Code by Its Cover* 논문이 **Findings of EACL 2026**에 게재 승인되었습니다."
 
 - date: "2025-09"
   tag: paper
-  text: "*Reasoning Models Better Express Their Confidence* 논문이 **NeurIPS 2025**에 게재 승인되었습니다."
+  text: "*Reasoning Models Better Express Their Confidence* has been accepted to **NeurIPS 2025**."
+  text_ko: "*Reasoning Models Better Express Their Confidence* 논문이 **NeurIPS 2025**에 게재 승인되었습니다."
 
 - date: "2025-08"
   tag: paper
-  text: "*Ko-LongRAG* 외 2편이 **EMNLP 2025**에 게재 승인되었습니다."
+  text: "Three papers, including *Ko-LongRAG*, have been accepted to **EMNLP 2025**."
+  text_ko: "*Ko-LongRAG* 외 2편이 **EMNLP 2025**에 게재 승인되었습니다."

@@ -64,7 +64,21 @@ p{ margin:0 0 1em; }
 .brand-name{ font-weight:700; font-size:16px; letter-spacing:-.015em; }
 .brand-org{ font-size:11.5px; color:var(--muted); }
 
+.nav-right{ display:flex; align-items:center; gap:12px; }
 .nav-links{ display:flex; align-items:center; gap:4px; }
+
+/* 언어 전환 탭 (EN / KO) */
+.lang-switch{
+  display:flex; align-items:center; gap:2px; flex:none;
+  border:1px solid var(--line); border-radius:8px; padding:3px; background:#fff;
+}
+.lang-tab{
+  font-size:12px; font-weight:700; letter-spacing:.03em;
+  padding:4px 9px; border-radius:6px; color:var(--muted); text-decoration:none;
+  transition:color .16s var(--ease), background .16s var(--ease);
+}
+a.lang-tab:hover{ color:var(--accent); background:var(--accent-soft); text-decoration:none; }
+.lang-tab.is-on{ background:var(--accent); color:#fff; }
 .nav-link{
   position:relative; padding:8px 12px; font-size:14.5px;
   color:var(--ink-2); text-decoration:none; border-radius:6px;
@@ -308,6 +322,13 @@ p{ margin:0 0 1em; }
 .page-title{ font-size:clamp(26px,3.4vw,36px); font-weight:800; letter-spacing:-.025em; }
 .page-sub{ font-size:16px; color:var(--ink-2); margin:10px 0 0; max-width:680px; }
 .page-body{ padding:48px 24px 76px; }
+
+/* 페이지 안 큰 구획 제목 (Projects / Areas of Interest) */
+.big-head{
+  font-size:24px; font-weight:800; letter-spacing:-.02em;
+  margin:0 0 28px; color:var(--ink);
+}
+* + .big-head{ margin-top:58px; }
 
 .block{ margin-bottom:52px; }
 .block:last-child{ margin-bottom:0; }

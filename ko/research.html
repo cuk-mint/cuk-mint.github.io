@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Research
-permalink: /research/
+permalink: /ko/research/
 ---
 
-<h2 class="big-head">Projects</h2>
+<h2 class="big-head">수행 과제</h2>
 
 <section class="block">
-  <h2 class="block-title">Government-Funded Projects</h2>
+  <h2 class="block-title">정부과제</h2>
   {%- if site.data.projects.government and site.data.projects.government.size > 0 -%}
   <ul class="info">
     {%- for p in site.data.projects.government -%}
@@ -19,14 +19,14 @@ permalink: /research/
   </ul>
   {%- else -%}
   <div class="empty">
-    <strong>Nothing here yet.</strong><br>
-    MINT Lab opened in August 2026 — funded projects will be listed here as they begin.
+    <strong>아직 진행 중인 과제가 없습니다.</strong><br>
+    MINT Lab은 2026년 8월에 문을 열었습니다 — 과제가 시작되면 이곳에 기록됩니다.
   </div>
   {%- endif -%}
 </section>
 
 <section class="block">
-  <h2 class="block-title">Industry-Academia Projects</h2>
+  <h2 class="block-title">산학협력 과제</h2>
   {%- if site.data.projects.industry and site.data.projects.industry.size > 0 -%}
   <ul class="info">
     {%- for p in site.data.projects.industry -%}
@@ -38,20 +38,19 @@ permalink: /research/
   </ul>
   {%- else -%}
   <div class="empty">
-    <strong>We welcome industry partners.</strong><br>
-    LLM training and evaluation, RAG systems, domain-specific language models —
-    if your organization is interested in working together, reach out at
-    <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+    <strong>산학 파트너를 환영합니다.</strong><br>
+    LLM 학습·평가, RAG 시스템 구축, 도메인 특화 언어모델 개발에 관심 있는 기관이라면
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a> 로 연락 주세요.
   </div>
   {%- endif -%}
 </section>
 
-<h2 class="big-head">Areas of Interest</h2>
+<h2 class="big-head">관심 있는 영역</h2>
 
 {%- for topic in site.data.research -%}
 <section class="block">
   <div class="card-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</div>
   <h2 class="block-title">{{ topic.title }}</h2>
-  <p style="font-size:15.5px;color:var(--ink-2);max-width:760px">{{ topic.detail }}</p>
+  <p style="font-size:15.5px;color:var(--ink-2);max-width:760px">{{ topic.detail_ko | default: topic.detail }}</p>
 </section>
 {%- endfor -%}

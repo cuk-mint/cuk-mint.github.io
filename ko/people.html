@@ -1,7 +1,7 @@
 ---
 layout: page
 title: People
-permalink: /people/
+permalink: /ko/people/
 ---
 
 {%- for f in site.data.members.faculty -%}
@@ -17,7 +17,7 @@ permalink: /people/
       <div class="pi-name">{{ f.name }}</div>
       {%- if f.name_ko %}<div class="pi-name-ko">{{ f.name_ko }}</div>{% endif -%}
       <div class="pi-role">{{ f.role }}, {{ site.department }}</div>
-      <p class="pi-bio">{{ f.bio }}</p>
+      <p class="pi-bio">{{ f.bio_ko | default: f.bio }}</p>
       <ul class="tags">
         {%- for i in f.interests -%}<li class="tag">{{ i }}</li>{%- endfor -%}
       </ul>
@@ -50,9 +50,9 @@ permalink: /people/
   </ul>
   {%- else -%}
   <div class="empty">
-    <strong>We are recruiting our first graduate students.</strong><br>
-    Interested in LLMs, RAG, or evaluation methodology?
-    See the <a href="{{ '/join/' | relative_url }}">Join Us</a> page.
+    <strong>첫 대학원생을 모집하고 있습니다.</strong><br>
+    LLM · RAG · 평가 방법론에 관심 있는 학생이라면
+    <a href="{{ '/ko/join/' | relative_url }}">Join Us</a> 페이지를 확인해 주세요.
   </div>
   {%- endif -%}
 </section>
@@ -76,9 +76,8 @@ permalink: /people/
   </ul>
   {%- else -%}
   <div class="empty">
-    <strong>Undergraduate research internships are open year-round.</strong><br>
-    Any student in the Department of Artificial Intelligence is welcome to apply,
-    regardless of year.
+    <strong>학부연구생을 상시 모집합니다.</strong><br>
+    가톨릭대학교 인공지능학과 재학생이라면 학년과 무관하게 지원할 수 있습니다.
   </div>
   {%- endif -%}
 </section>

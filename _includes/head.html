@@ -1,7 +1,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title and page.url != "/" %}{{ page.title }} · {{ site.lab_name }}{% else %}{{ site.lab_name }} — {{ site.university }}{% endif %}</title>
+  {%- assign lang = page.lang | default: 'en' %}
+  <title>{% if page.title and page.url != "/" and page.url != "/ko/" %}{{ page.title }} · {{ site.lab_name }}{% else %}{{ site.lab_name }} — {{ site.university }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
 
   <!-- 검색/공유 미리보기 -->
@@ -9,6 +10,19 @@
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
+
+  <!-- 언어별 대체 페이지 (검색엔진용) -->
+  {%- if lang == 'ko' %}
+    {%- assign en_alt = page.url | remove_first: '/ko' %}
+    {%- if en_alt == '' %}{% assign en_alt = '/' %}{% endif %}
+    {%- assign ko_alt = page.url %}
+  {%- else %}
+    {%- assign en_alt = page.url %}
+    {%- assign ko_alt = '/ko' | append: page.url %}
+  {%- endif %}
+  <link rel="alternate" hreflang="en" href="{{ en_alt | absolute_url }}">
+  <link rel="alternate" hreflang="ko" href="{{ ko_alt | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ en_alt | absolute_url }}">
 
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">

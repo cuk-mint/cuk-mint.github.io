@@ -14,7 +14,6 @@
       var open = links.classList.toggle("is-open");
       toggle.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
-      toggle.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
     });
 
     // 메뉴 항목을 누르면 닫기

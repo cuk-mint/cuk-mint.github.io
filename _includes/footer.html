@@ -3,7 +3,7 @@
     <div class="footer-main">
       <div class="footer-name">{{ site.lab_name }}</div>
       <div class="footer-line">{{ site.department }}, {{ site.university }}</div>
-      <div class="footer-line">{{ site.address }}</div>
+      <div class="footer-line">{% if page.lang == 'ko' and site.address_ko %}{{ site.address_ko }}{% else %}{{ site.address }}{% endif %}</div>
       <div class="footer-line">
         <a href="mailto:{{ site.email }}">{{ site.email }}</a>
       </div>

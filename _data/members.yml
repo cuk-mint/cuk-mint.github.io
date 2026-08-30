@@ -17,6 +17,10 @@ faculty:
       Previously a researcher at the EXAONE Lab, LG AI Research (2024–2026), where he was a
       core contributor to the EXAONE and K-EXAONE series of frontier-level Korean large
       language models, leading long-context research.
+    bio_ko: >
+      서울대학교 전기·정보공학부 박사(2024). LG AI Research EXAONE Lab에서 프론티어급
+      한국어 대규모 언어모델인 EXAONE · K-EXAONE 시리즈의 핵심 기여자로 참여했으며,
+      long-context 연구를 이끌었습니다.
     interests:
       - "Large Language Models"
       - "Retrieval-Augmented Generation"

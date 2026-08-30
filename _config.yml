@@ -13,7 +13,8 @@ tagline_ko:     "대규모 언어모델 · 검색증강생성 · 신뢰가능한
 pi_name:        "Yongil Kim"                    # 저자 목록에서 자동으로 굵게+밑줄 처리할 이름
 department:     "Department of Artificial Intelligence"
 university:     "The Catholic University of Korea"
-address:        "43 Jibong-ro, Bucheon-si, Gyeonggi-do, Republic of Korea"   # ← 실제 연구실 호수로 수정
+address:        "Room N223, Nichols Hall, 43 Jibong-ro, Bucheon-si, Gyeonggi-do 14662, Republic of Korea"
+address_ko:     "14662 경기도 부천시 지봉로 43, N223호 (니콜스관 2층)"
 email:          "miles94@naver.com"                                          # ← 학교 메일 나오면 교체
 
 # ---- 사이트 주소 -------------------------------------------
@@ -60,6 +61,9 @@ exclude:
   - README.md
   - vendor
 
+# 기본 언어는 영어(en), /ko/ 아래 페이지는 한국어(ko)
 defaults:
   - scope: { path: "" }
-    values: { layout: "page" }
+    values: { layout: "page", lang: "en" }
+  - scope: { path: "ko" }
+    values: { layout: "page", lang: "ko" }
