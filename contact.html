@@ -1,0 +1,71 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+---
+
+<section class="block">
+  <h2 class="block-title">연락처</h2>
+  <ul class="info">
+    <li>
+      <span class="info-key">Email</span>
+      <span class="info-val"><a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
+    </li>
+    <li>
+      <span class="info-key">Department</span>
+      <span class="info-val">{{ site.department }}</span>
+    </li>
+    <li>
+      <span class="info-key">University</span>
+      <span class="info-val">{{ site.university }}</span>
+    </li>
+    <li>
+      <span class="info-key">Address</span>
+      <span class="info-val">{{ site.address }}</span>
+    </li>
+    {%- if site.github_url and site.github_url != "" -%}
+    <li>
+      <span class="info-key">GitHub</span>
+      <span class="info-val"><a href="{{ site.github_url }}">{{ site.github_url }}</a></span>
+    </li>
+    {%- endif -%}
+  </ul>
+</section>
+
+<section class="block">
+  <h2 class="block-title">찾아오는 길</h2>
+  <p style="font-size:15.5px;color:var(--ink-2)">
+    연구실 위치와 약도는 준비되는 대로 이곳에 올리겠습니다.
+    방문을 원하시면 미리 메일로 일정을 잡아주세요.
+  </p>
+  <!--
+    지도를 넣고 싶다면 카카오맵/구글맵에서 "지도 퍼가기(embed)" 코드를 복사해
+    아래 주석을 지우고 그대로 붙여넣으면 됩니다. 서버는 필요 없습니다.
+
+    <div style="border-radius:10px;overflow:hidden;border:1px solid var(--line)">
+      <iframe src="..." width="100%" height="380" style="border:0" loading="lazy"></iframe>
+    </div>
+  -->
+</section>
+
+<section class="block">
+  <h2 class="block-title">문의 유형별 안내</h2>
+  <ul class="info">
+    <li>
+      <span class="info-key">대학원 진학</span>
+      <span class="info-val"><a href="{{ '/join/' | relative_url }}">Join Us</a> 페이지의 지원 방법을 참고해 주세요.</span>
+    </li>
+    <li>
+      <span class="info-key">학부연구생</span>
+      <span class="info-val">상시 모집합니다. 학년과 무관하게 지원할 수 있습니다.</span>
+    </li>
+    <li>
+      <span class="info-key">산학협력 · 공동연구</span>
+      <span class="info-val">과제 협의는 메일로 연락 주시면 빠르게 회신드립니다.</span>
+    </li>
+    <li>
+      <span class="info-key">세미나 초청</span>
+      <span class="info-val">LLM · RAG · LLM 평가 주제로 발표 가능합니다.</span>
+    </li>
+  </ul>
+</section>

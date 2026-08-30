@@ -1,0 +1,28 @@
+{%- comment -%}
+  논문 한 줄을 그립니다.  사용: {% include pub-item.html pub=item %}
+  PI 이름(site.pi_name)은 저자 목록에서 자동으로 굵게+밑줄 처리됩니다.
+{%- endcomment -%}
+{%- assign p = include.pub -%}
+{%- capture me_html -%}<span class="me">{{ site.pi_name }}</span>{%- endcapture -%}
+<li class="pub" data-type="{{ include.type | default: 'other' }}">
+  <div class="pub-body">
+    <div class="pub-title">{{ p.title }}</div>
+    <div class="pub-authors">{{ p.authors | replace: site.pi_name, me_html }}</div>
+    <div class="pub-meta">
+      <span class="pub-venue">{{ p.venue }}</span>
+      <span class="pub-year">{{ p.year }}</span>
+      {%- if p.note and p.note != "" -%}
+        <span class="pub-note{% if p.note contains 'Award' %} is-award{% endif %}">{{ p.note }}</span>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- if p.links -%}
+  <div class="pub-links">
+    {%- if p.links.arxiv %}<a href="{{ p.links.arxiv }}">arXiv</a>{% endif -%}
+    {%- if p.links.pdf %}<a href="{{ p.links.pdf }}">PDF</a>{% endif -%}
+    {%- if p.links.hf %}<a href="{{ p.links.hf }}">HF</a>{% endif -%}
+    {%- if p.links.code %}<a href="{{ p.links.code }}">Code</a>{% endif -%}
+  </div>
+  {%- endif -%}
+</li>

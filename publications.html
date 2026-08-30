@@ -1,0 +1,41 @@
+---
+layout: page
+title: Publications
+subtitle: "논문은 _data/publications.yml 에 3줄 추가하면 이 페이지에 자동으로 올라갑니다."
+permalink: /publications/
+---
+
+<!-- 필터: 브라우저에서만 동작합니다 (서버 불필요) -->
+<div class="filters" id="pubFilters">
+  <button class="filter is-on" data-filter="all">All</button>
+  <button class="filter" data-filter="international">International</button>
+  <button class="filter" data-filter="techreport">Technical Report</button>
+  <button class="filter" data-filter="domestic">Domestic</button>
+</div>
+
+<section class="block" data-section="techreport">
+  <h2 class="block-title">Technical Reports</h2>
+  <ul class="pubs">
+    {%- for p in site.data.publications.techreport -%}
+      {% include pub-item.html pub=p type="techreport" %}
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="block" data-section="international">
+  <h2 class="block-title">International Conferences &amp; Journals</h2>
+  <ul class="pubs">
+    {%- for p in site.data.publications.international -%}
+      {% include pub-item.html pub=p type="international" %}
+    {%- endfor -%}
+  </ul>
+</section>
+
+<section class="block" data-section="domestic">
+  <h2 class="block-title">Domestic Conferences &amp; Journals</h2>
+  <ul class="pubs">
+    {%- for p in site.data.publications.domestic -%}
+      {% include pub-item.html pub=p type="domestic" %}
+    {%- endfor -%}
+  </ul>
+</section>

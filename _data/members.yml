@@ -1,0 +1,41 @@
+# ============================================================
+#  구성원
+#  사진은 assets/img/people/ 에 넣고 photo 에 파일명만 적으면 됩니다.
+#  사진이 없으면 이름 이니셜이 자동으로 들어갑니다.
+# ============================================================
+
+faculty:
+  - name: "Yongil Kim"
+    name_ko: "김용일"
+    role: "Assistant Professor"
+    photo: "yongil-kim.jpg"         # assets/img/people/ 안의 파일명
+    email: "miles94@naver.com"
+    homepage: "https://yong1-kim.github.io"
+    scholar: ""
+    bio: >
+      Ph.D. in Electrical and Computer Engineering, Seoul National University (2024).
+      Previously a researcher at the EXAONE Lab, LG AI Research (2024–2026), where he was a
+      core contributor to the EXAONE and K-EXAONE series of frontier-level Korean large
+      language models, leading long-context research.
+    interests:
+      - "Large Language Models"
+      - "Retrieval-Augmented Generation"
+      - "LLM Evaluation & Robustness"
+      - "Dialogue and Interactive Systems"
+
+# ---- 대학원생 ----------------------------------------------
+# 비워두면 People 페이지에 "모집 중" 안내가 대신 표시됩니다.
+graduate: []
+# 예시:
+#   - name: "Hong Gildong"
+#     name_ko: "홍길동"
+#     role: "M.S. Student"
+#     photo: ""
+#     started: "2027.03"
+#     interests: ["RAG", "LLM Evaluation"]
+
+# ---- 학부연구생 --------------------------------------------
+undergraduate: []
+
+# ---- 졸업생 ------------------------------------------------
+alumni: []

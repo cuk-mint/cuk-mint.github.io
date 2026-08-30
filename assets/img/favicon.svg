@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2fbd8d"/>
+      <stop offset="1" stop-color="#0d6f51"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+
+  <!-- 16px 에서도 실루엣이 살아남도록 단순화 -->
+  <path d="M32,12 C41,20 45.5,27.5 45.5,33.5 C45.5,40.5 39.5,45 32,45 C24.5,45 18.5,40.5 18.5,33.5 C18.5,27.5 23,20 32,12 Z"
+        fill="#ffffff"/>
+  <path d="M32,44 L32,52" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#0d6f51">
+    <circle cx="32" cy="38" r="2.6"/>
+    <circle cx="32" cy="31" r="2.6"/>
+    <circle cx="32" cy="24" r="2.3"/>
+  </g>
+</svg>

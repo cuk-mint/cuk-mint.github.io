@@ -1,0 +1,39 @@
+# ============================================================
+#  뉴스 — 맨 위가 최신입니다. 새 소식은 이 파일 맨 위에 3줄 추가.
+#
+#  - date:  "2026-08"        (또는 "2026-08-30")
+#    text:  "본문. **굵게** 와 [링크](https://...) 사용 가능"
+#    tag:   paper | award | talk | lab      (색 구분용, 생략 가능)
+# ============================================================
+
+- date: "2026-08"
+  tag: lab
+  text: "**MINT Lab이 문을 열었습니다.** 김용일 교수가 가톨릭대학교 인공지능학과 조교수로 부임했습니다. 대학원생과 학부연구생을 모집합니다."
+
+- date: "2026-08"
+  tag: paper
+  text: "*BenchPreS* 논문이 **EMNLP 2026**에 게재 승인되었습니다."
+
+- date: "2026-08"
+  tag: paper
+  text: "*Multi-Genre Collection* 논문이 **CIKM 2026**에 게재 승인되었습니다."
+
+- date: "2026-08"
+  tag: paper
+  text: "**K-EXAONE 2.0 Technical Report**가 공개되었습니다. ([arXiv](https://arxiv.org/abs/2608.04505))"
+
+- date: "2026-04"
+  tag: paper
+  text: "**EXAONE 4.5 Technical Report**가 공개되었습니다. ([arXiv](https://arxiv.org/abs/2604.08644))"
+
+- date: "2026-01"
+  tag: paper
+  text: "*Don't Judge Code by Its Cover* 논문이 **Findings of EACL 2026**에 게재 승인되었습니다."
+
+- date: "2025-09"
+  tag: paper
+  text: "*Reasoning Models Better Express Their Confidence* 논문이 **NeurIPS 2025**에 게재 승인되었습니다."
+
+- date: "2025-08"
+  tag: paper
+  text: "*Ko-LongRAG* 외 2편이 **EMNLP 2025**에 게재 승인되었습니다."

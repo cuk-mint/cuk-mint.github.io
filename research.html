@@ -1,0 +1,23 @@
+---
+layout: page
+title: Research
+subtitle: "연구 주제는 _data/research.yml 에서 관리합니다."
+permalink: /research/
+---
+
+{%- for topic in site.data.research -%}
+<section class="block">
+  <div class="card-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</div>
+  <h2 class="block-title">{{ topic.title }}</h2>
+  <p style="font-size:15.5px;color:var(--ink-2);max-width:760px">{{ topic.detail }}</p>
+</section>
+{%- endfor -%}
+
+<section class="block">
+  <h2 class="block-title">Collaboration</h2>
+  <p style="font-size:15.5px;color:var(--ink-2);max-width:760px">
+    산학 공동연구와 정부과제 컨소시엄 참여를 환영합니다.
+    대규모 언어모델의 학습·평가, 검색증강생성 시스템 구축, 도메인 특화 LLM 개발에 관심 있는
+    기관이라면 <a href="mailto:{{ site.email }}">{{ site.email }}</a> 로 연락 주세요.
+  </p>
+</section>

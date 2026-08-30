@@ -1,0 +1,72 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">{{ site.department }} · {{ site.university }}</div>
+    <h1>{{ site.lab_name }}</h1>
+    <div class="hero-ko">{{ site.lab_name_ko }}</div>
+    <p class="acronym"><b>M</b>achine <b>I</b>ntelligence<span class="dot">·</span><b>N</b>atural Language<span class="dot">·</span><b>T</b>rustworthiness</p>
+    <p class="hero-tagline">{{ site.tagline }}</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="{{ '/join/' | relative_url }}">함께할 학생을 찾습니다 &rarr;</a>
+      <a class="btn btn-ghost" href="{{ '/research/' | relative_url }}">연구 주제 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- ---------------- Latest News ---------------- -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Latest News</h2>
+    </div>
+    <ul class="news">
+      {%- for item in site.data.news limit: site.home_news_count -%}
+      <li class="news-item">
+        <span class="news-date">{{ item.date | replace: '-', '.' }}</span>
+        {%- if item.tag %}<span class="news-tag is-{{ item.tag }}">{{ item.tag }}</span>{% endif -%}
+        <span class="news-text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+<!-- ---------------- Recent Publications ---------------- -->
+{%- assign all_pubs = site.data.publications.international | concat: site.data.publications.techreport -%}
+{%- assign featured = all_pubs | where: "selected", true | sort: "year" | reverse -%}
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Recent Publications</h2>
+      <a class="section-more" href="{{ '/publications/' | relative_url }}">전체 보기 &rarr;</a>
+    </div>
+    <ul class="pubs">
+      {%- for p in featured limit: site.home_pubs_count -%}
+        {% include pub-item.html pub=p %}
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+<!-- ---------------- Research at a glance ---------------- -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Research</h2>
+      <a class="section-more" href="{{ '/research/' | relative_url }}">자세히 &rarr;</a>
+    </div>
+    <ul class="cards">
+      {%- for topic in site.data.research limit: 4 -%}
+      <li class="card">
+        <div class="card-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</div>
+        <div class="card-title">{{ topic.title }}</div>
+        <div class="card-text">{{ topic.summary }}</div>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>

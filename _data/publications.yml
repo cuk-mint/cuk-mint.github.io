@@ -1,0 +1,224 @@
+# ============================================================
+#  논문 목록
+#
+#  새 논문이 나오면 해당 섹션 맨 위에 아래 형식으로 추가하세요.
+#
+#    - title:   "논문 제목"
+#      authors: "저자1, 저자2, Yongil Kim, 저자3"   # 이름은 자동으로 굵게+밑줄
+#      venue:   "EMNLP"            # 목록에 굵게 표시될 학회 약칭
+#      year:    2026
+#      note:    "Oral"             # 없으면 줄 삭제 (Oral / Best Paper Award 등)
+#      links:                      # 없는 항목은 줄 삭제
+#        arxiv: "https://arxiv.org/abs/..."
+#        code:  "https://github.com/..."
+#      selected: true              # 홈 화면 "Recent Publications"에 노출
+# ============================================================
+
+# ---------- Technical Reports ----------
+techreport:
+  - title: "K-EXAONE 2.0 Technical Report"
+    authors: "LG AI Research"
+    venue: "Technical Report"
+    year: 2026
+    month: 8
+    selected: true
+    links:
+      arxiv: "https://arxiv.org/abs/2608.04505"
+      hf: "https://huggingface.co/papers/2608.04505"
+      code: "https://github.com/LG-AI-EXAONE/K-EXAONE-2.0"
+
+  - title: "EXAONE 4.5 Technical Report"
+    authors: "LG AI Research"
+    venue: "Technical Report"
+    year: 2026
+    month: 4
+    links:
+      arxiv: "https://arxiv.org/abs/2604.08644"
+      hf: "https://huggingface.co/papers/2604.08644"
+      code: "https://github.com/LG-AI-EXAONE/EXAONE-4.5"
+
+  - title: "K-EXAONE Technical Report"
+    authors: "LG AI Research"
+    venue: "Technical Report"
+    year: 2026
+    month: 1
+    links:
+      arxiv: "https://arxiv.org/abs/2601.01739"
+      hf: "https://huggingface.co/papers/2601.01739"
+      code: "https://github.com/LG-AI-EXAONE/K-EXAONE"
+
+  - title: "EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and Reasoning Modes"
+    authors: "LG AI Research"
+    venue: "Technical Report"
+    year: 2025
+    month: 7
+    links:
+      arxiv: "https://arxiv.org/abs/2507.11407"
+      hf: "https://huggingface.co/papers/2507.11407"
+      code: "https://github.com/LG-AI-EXAONE/EXAONE-4.0"
+
+  - title: "EXAONE Deep: Reasoning Enhanced Language Models"
+    authors: "LG AI Research"
+    venue: "Technical Report"
+    year: 2025
+    month: 3
+    links:
+      arxiv: "https://arxiv.org/abs/2503.12524"
+      hf: "https://huggingface.co/collections/LGAI-EXAONE/exaone-deep-67d119918816ec6efa79a4aa"
+      code: "https://github.com/LG-AI-EXAONE/EXAONE-Deep"
+
+  - title: "EXAONE 3.5: Series of Large Language Models for Real-world Use Cases"
+    authors: "LG AI Research"
+    venue: "Technical Report"
+    year: 2024
+    month: 12
+    links:
+      arxiv: "https://arxiv.org/abs/2412.04862"
+      hf: "https://huggingface.co/papers/2412.04862"
+      code: "https://github.com/LG-AI-EXAONE/EXAONE-3.5"
+
+# ---------- International Conferences & Journals ----------
+international:
+  - title: "BenchPreS: A Benchmark for Context-Aware Personalized Preference Selectivity of Persistent-Memory LLMs"
+    authors: "Sangyeon Yoon, Sunkyoung Kim, Hyesoo Hong, Wonje Jeung, Yongil Kim, Wooseok Seo, Heuiyeen Yeen, Albert No"
+    venue: "EMNLP"
+    year: 2026
+    selected: true
+    links:
+      arxiv: "https://arxiv.org/abs/2603.16557"
+
+  - title: "Multi-Genre Collection: Scaling Creative Writing Beyond Story-Centric Data"
+    authors: "Hwan Chang, Yongil Kim, Heuiyeen Yeen, Yireun Kim, Jinsik Lee, Hwanhee Lee"
+    venue: "CIKM"
+    year: 2026
+    selected: true
+    links:
+      arxiv: "https://arxiv.org/abs/2608.13947"
+
+  - title: "Don't Judge Code by Its Cover: Exploring Biases in LLM Judges for Code Evaluation"
+    authors: "Jiwon Moon*, Yerin Hwang*, Dongryeol Lee, Taegwan Kang, Yongil Kim, Kyomin Jung"
+    venue: "Findings of EACL"
+    year: 2026
+
+  - title: "Reasoning Models Better Express Their Confidence"
+    authors: "Dongkeun Yoon, Seungone Kim, Sohee Yang, Sunkyoung Kim, Soyeon Kim, Yongil Kim, Eunbi Choi, Yireun Kim, Minjoon Seo"
+    venue: "NeurIPS"
+    year: 2025
+    selected: true
+
+  - title: "Fooling the LVLM Judges: Visual Biases in LVLM-Based Evaluation"
+    authors: "Yerin Hwang*, Dongryeol Lee*, Kyungmin Min, Taegwan Kang, Yongil Kim, Kyomin Jung"
+    venue: "EMNLP"
+    year: 2025
+
+  - title: "Can You Trick the Grader? Adversarial Persuasion of LLM Judges"
+    authors: "Yerin Hwang, Dongryeol Lee, Taegwan Kang, Yongil Kim, Kyomin Jung"
+    venue: "Findings of EMNLP"
+    year: 2025
+
+  - title: "Ko-LongRAG: A Korean Long-Context RAG Benchmark Built with a Retrieval-Free Approach"
+    authors: "Yongil Kim, Heuiyeen Yeen, Hyeongu Yun, Jinsik Lee"
+    venue: "Findings of EMNLP"
+    year: 2025
+    selected: true
+
+  - title: "LLMs can be easily Confused by Instructional Distractions"
+    authors: "Yerin Hwang, Yongil Kim, Jahyun Koo, Taegwan Kang, Hyunkyung Bae, Kyomin Jung"
+    venue: "ACL"
+    year: 2025
+
+  - title: "Are LLM-Judges Robust to Expressions of Uncertainty? Investigating the Effect of Epistemic Markers on LLM-based Evaluation"
+    authors: "Dongryeol Lee*, Yerin Hwang*, Yongil Kim, Joonsuk Park, Kyomin Jung"
+    venue: "NAACL"
+    year: 2025
+    note: "Oral"
+
+  - title: "SWITCH: Studying with Teacher for Knowledge Distillation of Large Language Models"
+    authors: "Jahyun Koo, Yerin Hwang, Yongil Kim, Taegwan Kang, Hyunkyung Bae, Kyomin Jung"
+    venue: "Findings of NAACL"
+    year: 2025
+
+  - title: "Flowlogue: A Novel Framework for Synthetic Dialogue Generation with Structured Flow from Text Passages"
+    authors: "Yongil Kim, Yerin Hwang, Hyunkyung Bae, Taegwan Kang, Kyomin Jung"
+    venue: "IEEE Access"
+    year: 2024
+
+  - title: "MP2D: An Automated Topic Shift Dialogue Generation Framework Leveraging Knowledge Graphs"
+    authors: "Yerin Hwang, Yongil Kim, Yunah Jang, Jeesoo Bang, Hyunkyung Bae, Kyomin Jung"
+    venue: "EMNLP"
+    year: 2024
+
+  - title: "Kosmic: Korean Text Similarity Metric Reflecting Honorific Distinctions"
+    authors: "Yerin Hwang, Yongil Kim, Hyunkyung Bae, Jeesoo Bang, Hwanhee Lee, Kyomin Jung"
+    venue: "LREC-COLING"
+    year: 2024
+
+  - title: "PR-MCS: Perturbation Robust Metric for MultiLingual Image Captioning"
+    authors: "Yongil Kim, Yerin Hwang, Hyeongu Yun, Seunghyun Yoon, Trung Bui, Kyomin Jung"
+    venue: "Findings of EMNLP"
+    year: 2023
+
+  - title: "Dialogizer: Context-aware Conversational-QA Dataset Generation from Textual Sources"
+    authors: "Yerin Hwang*, Yongil Kim*, Hyunkyung Bae, Hwanhee Lee, Jeesoo Bang, Kyomin Jung"
+    venue: "EMNLP"
+    year: 2023
+
+  - title: "Injecting Comparison Skills in Task-Oriented Dialogue Systems for Database Search Results Disambiguation"
+    authors: "Yongil Kim*, Yerin Hwang*, Joongbo Shin, Hyunkyung Bae, Kyomin Jung"
+    venue: "Findings of ACL"
+    year: 2023
+
+  - title: "Improving Cross-Modal Attention via Object Detection"
+    authors: "Yongil Kim, Yerin Hwang, Seunghyun Yoon, Hyeongu Yun, Kyomin Jung"
+    venue: "NeurIPS Workshop"
+    year: 2022
+
+  - title: "Modality Alignment between Deep Representations for Effective Video-and-Language Learning"
+    authors: "Hyeongu Yun*, Yongil Kim*, Kyomin Jung"
+    venue: "LREC"
+    year: 2022
+    note: "Oral"
+
+  - title: "Pairwise Context Similarity for Image Retrieval System using Variational Auto-Encoder"
+    authors: "Hyeongu Yun, Yongil Kim, Taegwan Kang, Kyomin Jung"
+    venue: "IEEE Access"
+    year: 2021
+
+# ---------- Domestic Conferences & Journals ----------
+domestic:
+  - title: "TSDG: A Framework for Generating Natural Topic-Shift Dialogue Data"
+    authors: "Yerin Hwang, Dongryeol Lee, Yongil Kim, Kyomin Jung"
+    venue: "KSC"
+    year: 2024
+
+  - title: "Error-Correction Chain of Thought (ECO CoT): Enhancing Accuracy in Mathematical Reasoning through Error-Correction Framework"
+    authors: "Yerin Hwang, Yongil Kim, Dongryeol Lee, Taegwan Kang, Hyunkyung Bae, Kyomin Jung"
+    venue: "KSC"
+    year: 2024
+
+  - title: "KLIPScore: A Highly Human-Correlated Korean Image Captioning Metric"
+    authors: "Yongil Kim, Yerin Hwang, Yoonhyung Chae, Seunghyun Yoon, Kyomin Jung"
+    venue: "KCC"
+    year: 2023
+    note: "Oral"
+
+  - title: "Thinking Fast and Slow in Multimodal Emotion Recognition Task"
+    authors: "Yerin Hwang, Yongil Kim, Yoonhyung Chae, Kyomin Jung"
+    venue: "KCC"
+    year: 2023
+
+  - title: "Improving Cross-Modal Attention via Object Detection"
+    authors: "Yongil Kim, Hyeongu Yun, Yerin Hwang, Kyomin Jung"
+    venue: "KCC"
+    year: 2022
+
+  - title: "COVID-19 Severity Prediction using Deep Transfer Learning"
+    authors: "Yerin Hwang, Yongil Kim, Kyomin Jung"
+    venue: "KCC"
+    year: 2022
+
+  - title: "Improving Video-QA System through Modality Alignment"
+    authors: "Yongil Kim, Hyeongu Yun, Seungpil Won, Kyomin Jung"
+    venue: "KCC"
+    year: 2021
+    note: "Best Paper Award"

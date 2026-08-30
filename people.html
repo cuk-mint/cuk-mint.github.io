@@ -1,0 +1,99 @@
+---
+layout: page
+title: People
+subtitle: "구성원은 _data/members.yml 에서 관리합니다."
+permalink: /people/
+---
+
+{%- for f in site.data.members.faculty -%}
+<section class="block">
+  <h2 class="block-title">Faculty</h2>
+  <div class="pi">
+    {%- if f.photo and f.photo != "" -%}
+      <img class="pi-photo" src="{{ '/assets/img/people/' | append: f.photo | relative_url }}" alt="{{ f.name }}">
+    {%- else -%}
+      <div class="pi-photo">{{ f.name | slice: 0 }}</div>
+    {%- endif -%}
+    <div class="pi-body">
+      <div class="pi-name">{{ f.name }}</div>
+      {%- if f.name_ko %}<div class="pi-name-ko">{{ f.name_ko }}</div>{% endif -%}
+      <div class="pi-role">{{ f.role }}, {{ site.department }}</div>
+      <p class="pi-bio">{{ f.bio }}</p>
+      <ul class="tags">
+        {%- for i in f.interests -%}<li class="tag">{{ i }}</li>{%- endfor -%}
+      </ul>
+      <div class="person-links" style="justify-content:flex-start;margin-top:16px">
+        {%- if f.email and f.email != "" %}<a href="mailto:{{ f.email }}">Email</a>{% endif -%}
+        {%- if f.homepage and f.homepage != "" %}<a href="{{ f.homepage }}">Homepage</a>{% endif -%}
+        {%- if f.scholar and f.scholar != "" %}<a href="{{ f.scholar }}">Google Scholar</a>{% endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+{%- endfor -%}
+
+<section class="block">
+  <h2 class="block-title">Graduate Students</h2>
+  {%- if site.data.members.graduate and site.data.members.graduate.size > 0 -%}
+  <ul class="people-grid">
+    {%- for m in site.data.members.graduate -%}
+    <li class="person">
+      {%- if m.photo and m.photo != "" -%}
+        <img class="person-photo" src="{{ '/assets/img/people/' | append: m.photo | relative_url }}" alt="{{ m.name }}">
+      {%- else -%}
+        <div class="person-photo">{{ m.name | slice: 0 }}</div>
+      {%- endif -%}
+      <div class="person-name">{{ m.name }}</div>
+      {%- if m.name_ko %}<div class="person-name-ko">{{ m.name_ko }}</div>{% endif -%}
+      <div class="person-role">{{ m.role }}</div>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- else -%}
+  <div class="empty">
+    <strong>첫 대학원생을 모집하고 있습니다.</strong><br>
+    LLM · RAG · 평가 방법론에 관심 있는 학생이라면
+    <a href="{{ '/join/' | relative_url }}">Join Us</a> 페이지를 확인해 주세요.
+  </div>
+  {%- endif -%}
+</section>
+
+<section class="block">
+  <h2 class="block-title">Undergraduate Researchers</h2>
+  {%- if site.data.members.undergraduate and site.data.members.undergraduate.size > 0 -%}
+  <ul class="people-grid">
+    {%- for m in site.data.members.undergraduate -%}
+    <li class="person">
+      {%- if m.photo and m.photo != "" -%}
+        <img class="person-photo" src="{{ '/assets/img/people/' | append: m.photo | relative_url }}" alt="{{ m.name }}">
+      {%- else -%}
+        <div class="person-photo">{{ m.name | slice: 0 }}</div>
+      {%- endif -%}
+      <div class="person-name">{{ m.name }}</div>
+      {%- if m.name_ko %}<div class="person-name-ko">{{ m.name_ko }}</div>{% endif -%}
+      <div class="person-role">{{ m.role }}</div>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- else -%}
+  <div class="empty">
+    <strong>학부연구생을 상시 모집합니다.</strong><br>
+    가톨릭대학교 인공지능학과 재학생이라면 학년과 무관하게 지원할 수 있습니다.
+  </div>
+  {%- endif -%}
+</section>
+
+{%- if site.data.members.alumni and site.data.members.alumni.size > 0 -%}
+<section class="block">
+  <h2 class="block-title">Alumni</h2>
+  <ul class="people-grid">
+    {%- for m in site.data.members.alumni -%}
+    <li class="person">
+      <div class="person-photo">{{ m.name | slice: 0 }}</div>
+      <div class="person-name">{{ m.name }}</div>
+      <div class="person-role">{{ m.role }}</div>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+{%- endif -%}

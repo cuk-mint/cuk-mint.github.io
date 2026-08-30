@@ -1,0 +1,65 @@
+# ============================================================
+#  사이트 전역 설정 — 대부분의 "바꾸고 싶은 것"은 여기 있습니다
+# ============================================================
+
+# ---- 연구실 정보 -------------------------------------------
+lab_name:       "MINT Lab"                      # ← 연구실 이름. 여기만 바꾸면 전체 반영
+lab_name_ko:    "가톨릭대학교 MINT 연구실"
+lab_short:      "MINT Lab"
+acronym:        "Machine Intelligence, Natural Language & Trustworthiness"
+tagline:        "Large Language Models, Retrieval-Augmented Generation, and Trustworthy AI Evaluation"
+tagline_ko:     "대규모 언어모델 · 검색증강생성 · 신뢰가능한 AI 평가"
+
+pi_name:        "Yongil Kim"                    # 저자 목록에서 자동으로 굵게+밑줄 처리할 이름
+department:     "Department of Artificial Intelligence"
+university:     "The Catholic University of Korea"
+address:        "43 Jibong-ro, Bucheon-si, Gyeonggi-do, Republic of Korea"   # ← 실제 연구실 호수로 수정
+email:          "miles94@naver.com"                                          # ← 학교 메일 나오면 교체
+
+# ---- 사이트 주소 -------------------------------------------
+# GitHub Pages 기본 주소를 쓸 때:
+url:            "https://cuk-mint.github.io"
+baseurl:        ""
+# ↑ Organization 이름을 다르게 정하셨다면 이 줄과 아래 github_url 을 맞춰주세요.
+# 나중에 학교 도메인을 붙이면 url 만 "https://mint.catholic.ac.kr" 로 바꾸면 됩니다.
+
+title:          "MINT Lab"
+description:    "MINT Lab — Machine Intelligence, Natural Language & Trustworthiness. Department of Artificial Intelligence, The Catholic University of Korea. Research on large language models, retrieval-augmented generation, and trustworthy AI evaluation."
+
+# ---- 외부 링크 (비우면 푸터에서 자동으로 숨겨집니다) --------
+github_url:     "https://github.com/cuk-mint"
+scholar_url:    ""
+twitter_url:    ""
+
+# ---- 네비게이션 메뉴 ---------------------------------------
+# 순서를 바꾸거나 항목을 지우면 메뉴가 바로 바뀝니다.
+nav:
+  - { name: "Home",         url: "/" }
+  - { name: "Research",     url: "/research/" }
+  - { name: "Publications", url: "/publications/" }
+  - { name: "People",       url: "/people/" }
+  - { name: "Courses",      url: "/courses/" }
+  - { name: "Join Us",      url: "/join/" }
+  - { name: "Contact",      url: "/contact/" }
+
+# ---- 홈 화면에 몇 개씩 보여줄지 ----------------------------
+home_news_count: 6
+home_pubs_count: 5
+
+# ============================================================
+#  아래는 Jekyll 엔진 설정 — 건드릴 일이 거의 없습니다
+# ============================================================
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: "page" }

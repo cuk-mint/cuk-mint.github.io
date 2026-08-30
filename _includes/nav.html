@@ -1,0 +1,23 @@
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img class="brand-mark" src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" aria-hidden="true">
+      <span class="brand-text">
+        <span class="brand-name">{{ site.lab_short }}</span>
+        <span class="brand-org">{{ site.university }}</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      {%- for item in site.nav -%}
+        {%- assign target = item.url | relative_url -%}
+        <a href="{{ target }}"
+           class="nav-link{% if page.url == item.url %} is-active{% endif %}">{{ item.name }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MINT Lab">
+  <defs>
+    <linearGradient id="mint" x1="0.2" y1="0" x2="0.85" y2="1">
+      <stop offset="0"    stop-color="#5fdcae"/>
+      <stop offset="0.5"  stop-color="#2fbd8d"/>
+      <stop offset="1"    stop-color="#0f8a63"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 줄기 -->
+  <path d="M32,50 L32,60" stroke="#0f7a5a" stroke-width="3.4" stroke-linecap="round"/>
+
+  <!-- 민트 잎 (아래가 넓고 끝이 뾰족한 난형) -->
+  <path d="M32,4 C45.5,15 52,26.5 52,36 C52,46.5 43,53 32,53 C21,53 12,46.5 12,36 C12,26.5 18.5,15 32,4 Z"
+        fill="url(#mint)"/>
+
+  <!-- 잎맥 = 신경망의 간선 (큰 크기에서만 또렷하게 보임) -->
+  <g stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" fill="none" opacity=".62">
+    <path d="M32,43 L22.5,37"/><path d="M32,43 L41.5,37"/>
+    <path d="M32,33 L22.5,27"/><path d="M32,33 L41.5,27"/>
+    <path d="M32,23 L25,17.5"/><path d="M32,23 L39,17.5"/>
+  </g>
+
+  <!-- 중앙맥 -->
+  <path d="M32,49 L32,13" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- 노드 — 작은 크기에서도 남는 세 개 -->
+  <g fill="#ffffff">
+    <circle cx="32" cy="43" r="3.6"/>
+    <circle cx="32" cy="33" r="3.6"/>
+    <circle cx="32" cy="23" r="3.6"/>
+  </g>
+  <!-- 잎맥 끝 노드 — 클 때만 보이는 디테일 -->
+  <g fill="#ffffff" opacity=".72">
+    <circle cx="22.5" cy="37"   r="1.8"/><circle cx="41.5" cy="37"   r="1.8"/>
+    <circle cx="22.5" cy="27"   r="1.8"/><circle cx="41.5" cy="27"   r="1.8"/>
+    <circle cx="25"   cy="17.5" r="1.8"/><circle cx="39"   cy="17.5" r="1.8"/>
+  </g>
+</svg>

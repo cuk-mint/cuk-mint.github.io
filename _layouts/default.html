@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% include head.html %}
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  {% include nav.html %}
+  <main id="main">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
