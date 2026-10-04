@@ -39,7 +39,41 @@ graduate: []
 #     interests: ["RAG", "LLM Evaluation"]
 
 # ---- 학부연구생 --------------------------------------------
-undergraduate: []
+# 회신받은 정보를 아래 형식으로 채워 넣으세요.
+# name     : 영문 로마자 (여권 표기)
+# name_ko  : 한글 이름
+# role     : "Undergraduate Researcher" (학년 표기 원하면 "Undergraduate Researcher, 3rd year")
+# photo    : assets/img/people/ 안의 파일명. 사진 비동의면 "" (이니셜 카드로 표시됨)
+# started  : 참여 시작 시점 / interests : 관심 키워드 (현재 카드에는 표시되지 않지만 기록용)
+# 정렬 순서: 학년(높은 순) → 인공지능학과 먼저
+undergraduate:
+  - name: "Hyunjune Ji"
+    name_ko: "지현준"
+    role: "Undergraduate Researcher"
+    photo: "hyunjune-ji.jpg"
+    started: "2026.09"
+    interests: ["LLM Evaluation & Robustness", "Agentic AI", "Adaptive Computation"]
+
+  - name: "Junseo Lee"
+    name_ko: "이준서"
+    role: "Undergraduate Researcher"
+    photo: ""                      # 사진 받으면 "junseo-lee.jpg" 로 교체
+    started: "2026.09"
+    interests: ["Agent LLM", "Dialogue & Interactive Systems", "World Models & Simulation"]
+
+  - name: "Jaehwan Jeong"
+    name_ko: "정재환"
+    role: "Undergraduate Researcher"
+    photo: "jaehwan-jeong.jpg"
+    started: "2026.09"
+    interests: ["LLM Evaluation & Robustness", "Retrieval-Augmented Generation", "Large Language Models"]
+
+  - name: "Dohyun Namgung"
+    name_ko: "남궁도현"
+    role: "Undergraduate Researcher"
+    photo: ""                      # 사진 비공개 요청 → 이니셜 카드
+    started: "2026.10"
+    interests: ["Agent LLM", "Personalization & Memory", "LLM Evaluation & Robustness"]
 
 # ---- 졸업생 ------------------------------------------------
 alumni: []
