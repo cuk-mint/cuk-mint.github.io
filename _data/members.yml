@@ -75,5 +75,12 @@ undergraduate:
     started: "2026.10"
     interests: ["Agent LLM", "Personalization & Memory", "LLM Evaluation & Robustness"]
 
+  - name: "Sihwan Park"
+    name_ko: "박시환"
+    role: "Undergraduate Researcher"
+    photo: ""                      # 사진 제공 어려움 → 이니셜 카드
+    started: "2026.11"
+    interests: ["Agent LLM", "Agent Service", "AI Chatbot"]
+
 # ---- 졸업생 ------------------------------------------------
 alumni: []
