@@ -82,5 +82,12 @@ undergraduate:
     started: "2026.11"
     interests: ["Agent LLM", "Agent Service", "AI Chatbot"]
 
+  - name: "Hyunsung Oh"
+    name_ko: "오현성"
+    role: "Undergraduate Researcher"
+    photo: "hyunsung-oh.jpg"
+    started: "2026.12"
+    interests: ["Retrieval-Augmented Generation", "LLM Evaluation & Robustness", "Personalization & Memory"]
+
 # ---- 졸업생 ------------------------------------------------
 alumni: []
